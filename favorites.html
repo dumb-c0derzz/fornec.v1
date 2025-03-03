@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags & Title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>💦Honey💦</title>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./media/nude.png" type="image/x-icon">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <!-- Page Title -->
+      <h1>Honey</h1>
+      <!-- Header Controls (for mobile hamburger menu) -->
+      <div class="header-controls">
+        <!-- Hamburger Menu (mobile) -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span class="hamburger-icon">&#9776;</span>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <!-- Home Link -->
+        <li><a href="./index.html">Home</a></li>
+        <!-- Authentication Buttons (shown if not logged in) -->
+        <div id="authArea">
+          <button class="header-btn" id="loginBtn">Login</button>
+          <button class="header-btn" id="signupBtn">Sign Up</button>
+        </div>
+        <!-- Logout Button (shown when logged in) -->
+        <button class="header-btn" id="logoutBtn" style="display:none;">Logout</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <section class="favorites-section">
+      <h2>Lick it!!</h2>
+      <!-- Favorites Gallery Container -->
+      <div id="favoritesGrid" class="gallery">
+        <!-- JS will inject favorites rows here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- POPUP OVERLAY -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup-content">
+      <!-- Popup Header: Download, Slideshow, and Favorite Toggle -->
+      <div class="popup-header">
+        <button id="downloadBtn" class="popup-btn" title="Download">&#8681;</button>
+        <button id="slideshowBtn" class="popup-btn" title="Toggle Slideshow">&#9658;</button>
+      </div>
+      <!-- Full Image Display -->
+      <img id="popupImage" src="" alt="Full Image">
+      <!-- Carousel Controls -->
+      <button id="prevBtn" class="carousel-btn" title="Previous">&#10094;</button>
+      <button id="nextBtn" class="carousel-btn" title="Next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit" class="modal-btn">Login</button>
+      </form>
+      <button id="closeLoginModal" class="modal-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- SIGNUP MODAL -->
+  <div id="signupModal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button type="submit" class="modal-btn">Sign Up</button>
+      </form>
+      <button id="closeSignupModal" class="modal-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Link to the main JavaScript file -->
+  <script src="./script.js"></script>
+</body>
+</html>
